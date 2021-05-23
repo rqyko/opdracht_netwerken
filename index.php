@@ -11,7 +11,7 @@
 <body>
     <h1 class="my-5">PHP OOP login page</h1>
     <p>
-        <a href="public/login.php" class="btn btn-info">Login</a>
+        <a href="login/login.php" class="btn btn-info">Login</a>
     </p>
 </body>
 </html>
