@@ -1,10 +1,15 @@
-# Project for using PHP login function
+# Project for using PHP OOP functions and tests
+
+## technical information:
+PHP version: 7.4.12 (echo 'PHP version: ' . phpversion();)
+MySQL database: 8.0.19 (SHOW VARIABLES LIKE '%version%';)
+
+
 
 ## site information
 As example derived from:
 
 https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
-
 
 ## Api example
 
@@ -47,11 +52,9 @@ http://localhost/api/product/read_paging.php
 http://localhost/api/category/read.php
 
 
+## api better URI
 
-## api better URL
-
-Normal input (example
-)
+Normal input (example)
 http://localhost/rest/api.php?order_id=15478959
 
 Above URL is not user friendly, therefore we will rewrite URL through the **.htaccess** file, copy paste the following rule in **.htaccess** file.
@@ -63,8 +66,6 @@ RewriteRule ^api/([0-9a-zA-Z_-]*)$ api.php?order_id=$1 [NC,L]
 Now you can get the transaction information by browsing the following URL.
 
 http://localhost/rest/api/15478959
-
-
 
 ## init
 create mysql database and user who has rights on that database. Run the init.sql script that can be found in the init directory

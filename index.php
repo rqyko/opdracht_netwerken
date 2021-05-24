@@ -13,5 +13,8 @@
     <p>
         <a href="login/login.php" class="btn btn-info">Login</a>
     </p>
+    <?php
+    echo 'PHP version: ' . phpversion();
+    ?>
 </body>
 </html>
