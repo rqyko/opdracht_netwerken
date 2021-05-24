@@ -1,0 +1,7 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+# redirection
+RewriteRule ^api/product/$ /api/product/read.php
+RewriteRule ^api/product/([0-9a-zA-Z_-]*)$ /api/product/read_one.php?id=$1 [NC,L]
+
+
